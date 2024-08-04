@@ -1,10 +1,13 @@
+import { MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
 import "./App.css";
+import HomePage from "./Components/HomePage";
 
 function App() {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <h1 className="font-semibold">Project Setup</h1>
-    </div>
+    <MantineProvider>
+      <HomePage />
+    </MantineProvider>
   );
 }
 
